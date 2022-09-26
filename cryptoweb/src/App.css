@@ -1,0 +1,261 @@
+.app { 
+  font-family: "Inter", sans-serif;
+}
+
+/* Header Section */
+header {
+  background-color: #404891;
+  margin: 0px;
+  clear: both;
+  overflow: hidden;
+  display: block;
+}
+.headerCenter {
+  max-width: 750px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+}
+.logo {
+  padding: 10px 10px 10px 15px;
+}
+.logo img {
+  height: 58px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.logo img:active {
+  transform: scale(0.97);
+}
+
+.desktopMenu {
+  font-weight: 400;
+  padding: 23px 10px 0 0;
+  text-align: right;
+}
+.menuItem {
+  cursor: pointer;
+  float: right;
+  margin-left: 20px;
+  margin-top: 28px;
+  background-color: #97ecc1;
+  border-radius: 5px;
+  padding: 2px 5px;
+  color: #1d1d1d;
+  font-size: 14px;
+}
+.menuItem:hover {
+  background-color: #9df3c8;
+}
+
+/* Main Section */
+main {
+  background-color: #eaeaea;
+  margin: 0px;
+  clear: both;
+  overflow: hidden;
+  padding-top: 30px;
+}
+.wrapper {
+  max-width: 750px;
+  margin: 0px auto;
+  display: grid;
+  gap: 40px;
+  padding: 0 10px 0 10px;
+}
+.card {
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  padding: 20px;
+}
+input{
+  border: 1px solid #1d1d1d;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+label {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+.login {
+  display: grid;
+  gap: 0.2em;
+  grid-template-columns: .3fr 1.7fr ;
+  height:40px;
+
+  padding: 7px 10px 7px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: lowercase;
+  background-color: rgb(236, 236, 236);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.displayCoins {
+  display: grid;
+  gap: 0.2em;
+  grid-template-columns: 40px 35px 1fr 1fr 1fr 35px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: lowercase;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.displayCoins:hover {
+  transform: scale(1.01);
+}
+.displayCoins:nth-child(2n + 1) {
+  background-color: rgb(236, 236, 236);
+}
+.displayCoins:active {
+  transform: scale(1);
+}
+
+.displayCoins img {
+  opacity: 80%;
+  margin-top: 1px;
+}
+
+.consoleLogButton {
+  margin-bottom: 10px;
+}
+
+.trendingBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.4em;
+  margin-bottom: 10px;
+}
+.trending {
+  background-color: rgb(236, 236, 236);
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: 3px solid rgb(208, 208, 208);
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  cursor: pointer;
+}
+.trending:hover {
+  background-color: rgb(240, 240, 240);
+}
+.trending:active {
+  border-bottom: 2px solid rgb(208, 208, 208);
+  margin-top: 1px;
+}
+.cardTitle {
+  position: relative;
+  top: -30px;
+  margin-bottom: -15px;
+  margin-left: 5px;
+}
+.cardTitle span {
+  background-color: #d1d1d1;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #636363;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+}
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+.specialFont {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 10px;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.span2 {
+  grid-column: span 2;
+}
+.bold {
+  font-weight: 500;
+}
+.emailInput {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  gap: 5px;
+}
+.formValidation {
+  color: rgb(154, 101, 101);
+  padding: 5px;
+  font-size: 14px;
+}
+.emailSuccess {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Individual Coin Page */
+.coinStats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.coinPrice {
+  display: grid;
+  grid-template-columns: 23px 1fr;
+  font-weight: 500;
+}
+.bigPrice {
+  font-size: 46px;
+  font-weight: 700;
+  color: #2c2c2c;
+  grid-column: span 2;
+}
+.statsCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 650px) {
+  .app {
+    grid-template-columns: 1fr;
+    font-family: "Inter", sans-serif;
+  }
+  .desktopMenu {
+    display: none;
+  }
+  .mobileMenu {
+    display: block;
+  }
+  .coinStats .card {
+    grid-column: span 2;
+  }
+  .chartIcon {
+    display: none;
+  }
+  .displayCoins {
+    grid-template-columns: 40px 35px 1fr 1fr 1fr 0px;
+  }
+  .floatRight {
+    float: right;
+  }
+  .topMovers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4em;
+    margin-bottom: 10px;
+  }
+}
